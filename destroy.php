@@ -16,7 +16,5 @@ if(isset($_GET['id'])){
         exit();
     }catch(PDOException $e){
         echo "Error: " . $e->getMessage();
-
     }
 }
-?>

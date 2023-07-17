@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h3>User List</h3>
+    <h3>Contact List</h3>
     <a href="create.php">create</a>
     <br><br>
     <table border="1">
@@ -29,7 +29,7 @@
             <?=
             require_once 'db.php';
 
-            $stmt = $conn->query("SELECT * FROM Contact");
+            $stmt = $conn->query("SELECT * FROM contact");
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 echo '<tr>';
                 echo '<td>' . $row['id'] . '</td>';

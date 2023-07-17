@@ -27,7 +27,7 @@ if (isset($_GET['id'])) {
         <input type="hidden" name="id" value="<?php echo $user['id']; ?>">
         <div>
             <label for="firstName">First Name</label><br>
-            <input type="text" name="first_name" id="firstName" require>
+            <input type="text" name="first_name" id="firstName" required>
         </div><br><br>
         <div>
             <label for="lastName">Last Name</label><br>
@@ -35,15 +35,15 @@ if (isset($_GET['id'])) {
         </div><br><br>
         <div>
             <label for="mobileNo">Mobile No</label><br>
-            <input type="text" name="mobile_no" id="mobileNo">
+            <input type="number" name="mobile_no" id="mobileNo">
         </div><br><br>
         <div>
             <label for="email">Email</label><br>
             <input type="email" name="email" id="email">
         </div><br><br>
         <div>
-            <label for="DoB">Date of Birth</label><br>
-            <input type="date" name="dob" id="DoB">
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" name="dob" id="dob">
         </div><br><br>
         <div>
             <button type="submit">Save</button>
